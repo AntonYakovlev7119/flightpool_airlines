@@ -1,0 +1,46 @@
+:root {
+  --index: calc(1vh + 1vw);
+  --btn-transition: 0.35s ease-out;
+  --primary-color: aliceblue;
+  --secondary-color: rgb(224, 108, 0);
+  --header-bg-color: linear-gradient(
+    rgba(117, 177, 255, 0.774),
+    rgb(59, 123, 206)
+  );
+  --body-color: rgb(241, 241, 241);
+  --footer-color: rgb(181, 244, 255);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  min-height: 100vh;
+}
+
+div.page-layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  height: 100vh;
+}
+
+main {
+  flex: 1 1 auto;
+  background-color: var(--body-color);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}

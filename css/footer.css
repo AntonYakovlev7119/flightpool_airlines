@@ -1,0 +1,30 @@
+footer {
+  font-family: Roboto;
+  padding: 20px 30px;
+  min-height: 120px;
+  background: var(--footer-color);
+}
+
+#copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: calc(var(--index) * 0.7);
+}
+
+.footer-navbar {
+  display: flex;
+  justify-content: center;
+  font-size: calc(var(--index) * 0.7);
+  gap: 10vw;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col a:hover {
+  transition: 0.4s;
+  color: rgb(82, 82, 82);
+}
