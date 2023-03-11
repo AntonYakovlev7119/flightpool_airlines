@@ -43,12 +43,12 @@
           </a>
         </div>
         <div class="nav-container">
-          <a href="/">
+          <a href="./index.html">
             <img class="mobile-logo" src="./images/mobile-logo.png" alt="" />
           </a>
 
           <nav class="desktop">
-            <a href="" class="test-o-nav-1">Акции</a>
+            <a href="#" class="test-o-nav-1">Акции</a>
             <form action="#" method="post">
               <input
                 type="search"
@@ -58,13 +58,17 @@
               />
             </form>
 
-            <a href="" class="test-o-nav-3">Регистрация на рейс</a>
-            <a href="" class="test-o-nav-4">Личный кабинет</a>
+            <a href="./pages/search.html" class="test-o-nav-3"
+              >Регистрация на рейс</a
+            >
+            <a href="./pages/profile.html" class="test-o-nav-4"
+              >Личный кабинет</a
+            >
           </nav>
 
           <aside class="mobile-navigation">
             <nav class="mobile">
-              <a href="" class="test-o-nav-1">Акции</a>
+              <a href="#" class="test-o-nav-1">Акции</a>
               <form action="#" method="post">
                 <input
                   type="search"
@@ -74,8 +78,12 @@
                 />
               </form>
 
-              <a href="" class="test-o-nav-3">Регистрация на рейс</a>
-              <a href="" class="test-o-nav-4">Личный кабинет</a>
+              <a href="./pages/search.html" class="test-o-nav-3"
+                >Регистрация на рейс</a
+              >
+              <a href="./pages/profile.html" class="test-o-nav-4"
+                >Личный кабинет</a
+              >
             </nav>
           </aside>
 
@@ -84,22 +92,70 @@
           </div>
         </div>
       </header>
-      <main></main>
+      <main>
+        <section class="booking-principles">
+          <h3>Принципы бронирования</h3>
+          <div class="principles-container">
+            <div class="principle">
+              <img src="./images/principle1.1.png" alt="" />
+              <p>Выберите подхоящий рейс</p>
+            </div>
+            <div class="principle">
+              <img src="./images/principle2.png" alt="" />
+              <p>Количество бронирований на рейс превышает 50%</p>
+            </div>
+            <div class="principle">
+              <img src="./images/principle3.png" alt="" />
+              <p>Получите скидку</p>
+            </div>
+          </div>
+        </section>
+        <section class="company-trust">
+          <h3>Доверие</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
+            consequuntur animi sint, reiciendis cupiditate autem molestias
+            architecto distinctio quidem alias. Asperiores exercitationem ipsum,
+            nobis cum hic et rem! Corporis, quos.
+          </p>
+        </section>
+        <section class="search">
+          <h3>Поиск рейсов</h3>
+          <form action="" method="post" class="page-form">
+            <input type="text" class="test-0-fd" placeholder="Откуда" />
+            <input type="text" class="test-0-fa" placeholder="Куда" />
+            <input type="date" class="test-0-fdt-" placeholder="Туда" />
+            <input type="date" class="test-0-fat" placeholder="Обратно" />
+            <input
+              type="number"
+              class="test-0-fnp"
+              placeholder="Количество пассажиров"
+            />
+            <button type="submit" class="test-0-fbs">Найти рейсы</button>
+          </form>
+        </section>
+        <section class="discounts">
+          <h3>Акции</h3>
+
+          <div class="discounts-container"></div>
+        </section>
+      </main>
       <footer>
         <div class="footer-navbar">
           <div class="footer-col">
-            <a href="">Главная</a>
-            <a href="">Новости</a>
-            <a href="">Возврат средств</a>
-            <a href="">Отзыв</a>
+            <a href="./index.html">Главная</a>
+            <a href="http://AntonYakovlev-m1.wsr.ru/news">Новости</a>
+            <a href="http://AntonYakovlev-m1.wsr.ru/return">Возврат</a>
+            <a href="http://AntonYakovlev-m1.wsr.ru/feedback">Отзыв</a>
           </div>
           <div class="footer-col">
-            <a href="">Вход</a>
-            <a href="">Регистрация</a>
-            <a href="">Отзыв</a>
+            <a href="./pages/login.html">Вход</a>
+            <a href="./pages/register.html">Регистрация</a>
+            <a href="http://AntonYakovlev-m1.wsr.ru/contact">Контакты</a>
           </div>
         </div>
-        <div id="copyright"><b>&copy«FlightPool»</b></div>
+        <span class="test-0-phone">Телефон: 8 (800) 100-10-10</span>
+        <span id="copyright"><b>&copy«FlightPool»</b></span>
       </footer>
     </div>
   </body>

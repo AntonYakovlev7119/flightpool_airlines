@@ -2,10 +2,7 @@ const toggle_menu = document.querySelector(".toggle-menu");
 const mobile_navbar = document.querySelector("aside.mobile-navigation");
 
 const setVar = function () {
-  document.documentElement.style.setProperty(
-    "--x",
-    `${document.body.clientWidth}px`
-  );
+  mobile_navbar.style.cssText = `--x: ${document.body.clientWidth}px`;
 };
 
 setVar();

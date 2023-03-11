@@ -1,6 +1,3 @@
-header {
-}
-
 .header-bg {
   display: flex;
   justify-content: center;
@@ -24,13 +21,11 @@ img.cloud {
 #cloud-1 {
   bottom: -50px;
   left: -10px;
-  /* height: 320px; */
   height: calc(var(--index) * 14);
 }
 #cloud-2 {
   right: 20px;
   bottom: 20px;
-  /* height: 300px; */
   height: calc(var(--index) * 13);
 }
 #cloud-3 {
@@ -41,10 +36,8 @@ img.cloud {
 }
 
 #cloud-4 {
-  /* top: -40px; */
   top: calc(var(--index) * -1);
   left: 12%;
-  /* height: 230px; */
   height: calc(var(--index) * 10.5);
   z-index: 1;
 }
@@ -86,7 +79,6 @@ nav.mobile a:hover {
 }
 
 .test-o-nav-2 {
-  /* font-size: 18px; */
   font-size: calc(var(--index));
   background-color: var(--primary-color);
   border: 0;
@@ -121,7 +113,7 @@ nav.mobile a:hover {
 }
 
 nav.mobile {
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 
@@ -178,13 +170,28 @@ aside.mobile-navigation .test-o-nav-2 {
   top: 12px;
 }
 
+@media screen and (min-width: 1920px) {
+  #cloud-1 {
+    height: 433px;
+  }
+  #cloud-2 {
+    height: 402px;
+  }
+  #cloud-3 {
+    height: 371px;
+  }
+  #cloud-4 {
+    height: 325px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   nav a {
     font-size: 22px;
   }
 
   .test-0-logo {
-    height: 133px;
+    height: 150px;
   }
 
   nav.desktop .test-o-nav-2 {
@@ -205,15 +212,21 @@ aside.mobile-navigation .test-o-nav-2 {
     display: block;
   }
 
-  nav.mobile {
-    display: flex;
-  }
-
   aside.mobile-navigation {
     display: block;
   }
 
   nav.desktop {
     display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  nav.mobile a {
+    font-size: 12px;
+  }
+
+  nav.mobile .test-o-nav-2 {
+    font-size: 12px;
   }
 }

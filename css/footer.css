@@ -5,9 +5,18 @@ footer {
   background: var(--footer-color);
 }
 
+span.test-0-phone {
+  display: block;
+  text-align: center;
+  font-size: calc(var(--index) * 0.7);
+  margin: 10px;
+}
+
 #copyright {
+  display: block;
   text-align: center;
   margin-top: 30px;
+
   font-size: calc(var(--index) * 0.7);
 }
 
@@ -27,4 +36,23 @@ footer {
 .footer-col a:hover {
   transition: 0.4s;
   color: rgb(82, 82, 82);
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-navbar a,
+  span.test-0-phone {
+    font-size: 17px;
+  }
+
+  #copyright {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-navbar a,
+  span.test-0-phone,
+  #copyright {
+    font-size: 12px;
+  }
 }
