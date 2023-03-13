@@ -223,10 +223,10 @@ aside.mobile-navigation .test-o-nav-2 {
 
 @media screen and (max-width: 375px) {
   nav.mobile a {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   nav.mobile .test-o-nav-2 {
-    font-size: 12px;
+    font-size: 18px;
   }
 }

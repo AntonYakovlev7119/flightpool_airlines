@@ -30,9 +30,14 @@ h3 {
   font-size: calc(var(--index) * 1.4);
 }
 
+h3.center {
+  text-align: center;
+}
+
 h1,
 h3,
-p {
+p,
+label {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -43,7 +48,8 @@ h3 {
   -webkit-text-fill-color: transparent;
 }
 
-p {
+p,
+label {
   font-size: calc(var(--index));
 }
 
@@ -74,6 +80,35 @@ main {
   padding: 20px calc(var(--index) * 3);
 }
 
+.page-button1 {
+  font-size: calc(var(--index));
+  color: var(--secondary-color);
+  background: transparent;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  padding: 5px 10px;
+  max-width: 250px;
+  cursor: pointer;
+  transition: var(--btn-transition);
+}
+
+.page-button1:hover {
+  background: var(--secondary-color);
+  color: aliceblue;
+  transition: var(--btn-transition);
+}
+
+.page-button2 {
+  background: linear-gradient(var(--secondary-color), orange);
+  font-size: calc(var(--index) * 0.8);
+  color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  padding: 5px 10px;
+  max-width: 200px;
+  cursor: pointer;
+}
+
 /* Главная */
 
 .principles-container {
@@ -101,14 +136,17 @@ main {
 
 .principle:first-child img {
   animation: 2s 1s infinite principles;
+  -webkit-animation: 2s 1s infinite principles;
 }
 
 .principle:last-child img {
   animation: 2s infinite principles;
+  -webkit-animation: 2s infinite principles;
 }
 
 .principle:nth-child(2) img {
   animation: 2s 1.5s infinite principles;
+  -webkit-animation: 2s 1.5s infinite principles;
 }
 
 form.page-form {
@@ -117,7 +155,6 @@ form.page-form {
   align-items: center;
   max-width: 400px;
   width: 100%;
-  gap: 15px;
 }
 
 form.page-form input {
@@ -126,26 +163,190 @@ form.page-form input {
   border: 2px solid var(--secondary-color);
   border-radius: 5px;
   padding: 5px 10px;
+  margin-bottom: 15px;
   max-width: 400px;
   width: 100%;
 }
 
-form.page-form button {
-  font-size: calc(var(--index));
-  color: var(--secondary-color);
-  background: transparent;
-  border: 2px solid var(--secondary-color);
-  border-radius: 5px;
-  padding: 5px 10px;
-  max-width: 250px;
-  cursor: pointer;
-  transition: var(--btn-transition);
+form.page-form label {
+  align-self: flex-start;
+}
+.discounts-container,
+.flight-bookings-container,
+.fligts-container,
+.passangers-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--index));
 }
 
-form.page-form button:hover {
-  background: var(--secondary-color);
-  color: aliceblue;
-  transition: var(--btn-transition);
+.discount {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  max-height: 510px;
+}
+
+.discount img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.test-0-an {
+  font-weight: 600;
+}
+
+.description-container {
+  padding-bottom: 45px;
+}
+
+.test-0-ad {
+  padding: 2px 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.test-0-abm {
+  position: absolute;
+  bottom: 0;
+}
+
+.private-discounts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Регистрация */
+
+.register {
+  display: flex;
+  justify-content: center;
+}
+
+/* Вход */
+
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+/* Личный кабинет */
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking {
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  max-width: 500px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Результаты поиска */
+
+.test-4-bsb {
+  margin-top: 20px;
+}
+
+.flight {
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  max-width: 500px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Бронирование и управление бронированием*/
+
+.passanger {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.test-5-add,
+.test-5-remove {
+  margin: 10px;
+}
+
+.test-5-book {
+  margin-top: 15px;
+}
+
+/* Выбор места в самолёте */
+
+.seat-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notes {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.green,
+.red {
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+.plane-model {
+  max-width: 600px;
+  text-align: center;
+}
+
+.seats-model {
+  display: flex;
+  gap: 50px;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  gap: 10px;
+}
+
+.first-col,
+.second-col,
+.third-col,
+.fourth-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.seat {
+  display: block;
+  background-color: green;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 @font-face {
@@ -173,7 +374,8 @@ form.page-form button:hover {
   }
 
   form.page-form input,
-  form.page-form button {
+  form.page-form button,
+  .page-button2 {
     font-size: 22px;
   }
 }
@@ -192,7 +394,8 @@ form.page-form button:hover {
   }
 
   form.page-form input,
-  form.page-form button {
+  form.page-form button,
+  .page-button2 {
     font-size: 18px;
   }
 }
