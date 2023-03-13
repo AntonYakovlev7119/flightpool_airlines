@@ -49,10 +49,10 @@ span.test-0-phone {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .footer-navbar a,
   span.test-0-phone,
   #copyright {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
